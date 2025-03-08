@@ -21,9 +21,30 @@ vim.opt.rtp:prepend(lazypath)
 -- vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-local plugins = {}
-local opts = {}
-
-
 -- Setup lazy.nvim
-require("lazy").setup(plugins, opts)
+require("lazy").setup({
+	spec = {
+		-- { "lazyVim/LazyVim", import = "lazyvim.plugin"},
+		{ import = "plugins"},
+	},
+	install = { colorscheme = { "tokyonight", "habamax" } },
+  checker = {
+    enabled = true, -- check for plugin updates periodically
+    notify = false, -- notify on update
+  }, -- automatically check for plugin updates
+  performance = {
+    rtp = {
+      -- disable some rtp plugins
+      disabled_plugins = {
+        "gzip",
+        -- "matchit",
+        -- "matchparen",
+        -- "netrwPlugin",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
+    },
+  },
+})
