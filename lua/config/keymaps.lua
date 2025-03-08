@@ -19,5 +19,6 @@ vim.keymap.set('n', '<leader>ww', ':w<cr>', opts)
 vim.keymap.set('n', '<leader>wq', ':wq<cr>', opts)
 
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<cr>', opts)
+-- vim.keymap.set('n', '<leader>',  ':edit', opts)
 
 
