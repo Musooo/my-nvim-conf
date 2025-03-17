@@ -12,6 +12,7 @@ return {
             ensure_installed = {
                 "ast_grep",
 				"rust_analyzer",
+				"gopls",
             },
         })
 

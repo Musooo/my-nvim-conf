@@ -44,6 +44,12 @@ return {
 					capabilities,
 				})
 			end,
+			["gopls"] = function()
+				nvim_lsp["gopls"].setup({
+					on_attach = on_attach,
+					capabilities,
+				})
+			end,
         })
     end,
 }
