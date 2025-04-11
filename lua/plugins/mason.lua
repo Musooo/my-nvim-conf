@@ -13,17 +13,18 @@ return {
                 "ast_grep",
 				"rust_analyzer",
 				"gopls",
+		        "clangd",
             },
         })
 
         require("mason-tool-installer").setup({
             ensure_installed = {
-                "prettier",
+                -- "prettier",
                 "stylua", -- lua formatter
                 "isort", -- python formatter
                 "black", -- python formatter
                 "pylint",
-                "eslint_d",
+                -- "eslint_d",
             },
         })
     end,

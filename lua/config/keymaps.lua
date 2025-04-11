@@ -17,7 +17,7 @@ vim.keymap.set('n', '<leader>4', ':ssplit<cr>', opts)
 vim.keymap.set('n', '<leader>qq', ':q<cr>', opts)
 vim.keymap.set('n', '<leader>ww', ':w<cr>', opts)
 vim.keymap.set('n', '<leader>wq', ':wq<cr>', opts)
-
+vim.keymap.set('n', '<c-d>', '<cmd> lua vim.diagnostic.open_float() <CR>', opts)
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<cr>', opts)
 -- vim.keymap.set('n', '<leader>',  ':edit', opts)
 
